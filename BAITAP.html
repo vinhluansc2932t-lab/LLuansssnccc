@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Web Cá Nhân</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero h1 {
+    font-size: 3.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+    animation: fadeDown 1.2s ease;
+}
+
+.name {
+    font-size: 4.2rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00ffd5, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px rgba(0, 255, 213, 0.35);
+}
+
+.subtitle {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #ddd;
+    opacity: 0.9;
+    animation: fadeUp 1.4s ease;
+}
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    body {
+        background-image: url("luan1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.skill-link:hover img {
+    transform: rotate(5deg) scale(1.1);
+    transition: 0.4s;
+}
+        header {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            border-radius: 30px;
+            background: #00c6ff;
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #00ffd5;
+            transform: scale(1.05);
+        }
+        section {
+            padding: 80px 10%;
+        }
+        .title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .about, .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+        .card {
+            background: rgba(255,255,255,0.08);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.15);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0,0,0,0.4);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+   <header>
+    <div class="hero">
+        <h1>
+            Xin chào, mình là <br>
+            <span class="name">Nguyễn Vĩnh Luân</span>
+        </h1>
+
+        <p class="subtitle">
+            Tư duy tuyển thủ • Đam mê Lập trình Web • HDPE
+        </p>
+        <a href="#about" class="btn">Khám phá</a>
+    </div>
+</header>
+
+    <section id="about">
+        <h2 class="title">Giới thiệu</h2>
+        <div class="about">
+            <div class="card">
+                <h3>👤 Bản thân</h3>
+                <p>
+                    Tôi là học sinh trung học phổ thông, đang học và tìm hiểu
+                    về lập trình web, HDPE và tư duy tuyển thủ.
+                </p>
+            </div>
+            <div class="card">
+                <h3>🎯 Mục tiêu</h3>
+                <p>
+                    Trở thành người đầu tư HDPE mạnh nhất thể giới.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+    <h2 class="title">My skills</h2>
+    <div class="skills">
+        <a href="https://www.w3schools.com/css/"
+   target="_blank"
+   class="card skill-link">
+    <h3>CSS</h3>
+    <p>Thiết kế giao diện</p>
+</a>
+<a href="https://www.w3schools.com/js/"
+   target="_blank"
+   class="card skill-link">
+    <h3>JavaScript</h3>
+    <p>Tạo tương tác</p>
+</a>
+
+<a href="https://github.com/"
+   target="_blank"
+   class="card skill-link">
+    <h3>Tư duy Tuyển thủ</h3>
+    <p>Giải quyết vấn đề</p>
+
+</a>
+<a href="sothich1.html" class="card skill-link">
+    <h3>Sở thích</h3>
+    <p>Nhấn để xem chi tiết</p>
+</a>
+
+
+    </div>
+</section>
+</body>
+</html>
+
